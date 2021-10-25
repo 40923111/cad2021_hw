@@ -229,12 +229,28 @@ var winkVideoData = {
   frameStops: {
   },
 };
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 20,
+  buttonFrameLength: 10,
+  buttonFrameOffset: 5,
+  frameStops: {
+  },
+};
 </script>
 <div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="600" width="900">
 <source src="./../downloads/安裝.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
 <h5 class="winkVideoControlBarProgressLeftClass">影片功能列表</h5>
 <h5 class="winkVideoControlBarProgressLeftClass">1播放速度</h5>
 <h5 class="winkVideoControlBarProgressLeftClass">2對話框</h5>
@@ -247,7 +263,6 @@ var winkVideoData = {
 <h5><span><span>在左上角找到 File 到Preferences</span></span></h5>
 <p><span><span><img alt="" height="485" src="/images/輸出1.jpg" width="347"/></span></span></p>
 </div>
-</div>
 <h5 class="winkVideoPlayOverlayClass"><span>把路徑指到 ShareX 裡的 ffmpeg</span></h5>
 <p><span><img alt="" height="626" src="/images/輸出2.jpg" width="775"/></span></p>
 <h6><span>設定wink輸出大小</span></h6>
@@ -256,4 +271,3 @@ var winkVideoData = {
 <p><span><span><img alt="" height="427" src="/images/輸出3.jpg" width="388"/></span></span></p>
 <h6><span>進去可以用%數調整 (Resize to percent)</span></h6>
 <h6><span><span>或是直接設定大小 (Resize to size)</span></span></h6>
-</div>
