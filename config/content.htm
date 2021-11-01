@@ -218,22 +218,43 @@ end</pre>
 <p></p>
 <p>亂碼後加@就完成設定了</p>
 <p>之後試試acp看看能不能上傳</p>
-<h2>W4 wink建立</h2>
-<h4>wink 安裝步驟</h4>
-<h6>
+<h2>WINK 建立</h2>
+<h4>WINK 安裝步驟</h4>
+<p></p>
 <script>
 var winkVideoData = {
   dataVersion: 1,
-  frameRate: 20,
-  buttonFrameLength: 10,
-  buttonFrameOffset: 5,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
   frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 200, y: 183, width: 28, height: 13 }, target: 3 },
+    ],
+    "7": [
+      { type: "gotoframe", rect: { x: 132, y: 174, width: 28, height: 13 }, target: 2 },
+      { type: "gotoframe", rect: { x: 224, y: 170, width: 28, height: 13 }, target: 8 },
+    ],
+    "12": [
+      { type: "gotoframe", rect: { x: 195, y: 77, width: 28, height: 13 }, target: 7 },
+      { type: "gotoframe", rect: { x: 277, y: 80, width: 28, height: 13 }, target: 13 },
+    ],
+    "17": [
+      { type: "gotoframe", rect: { x: 147, y: 478, width: 28, height: 13 }, target: 12 },
+      { type: "gotoframe", rect: { x: 340, y: 472, width: 28, height: 13 }, target: 18 },
+    ],
+    "22": [
+      { type: "gotoframe", rect: { x: 415, y: 479, width: 28, height: 13 }, target: 17 },
+      { type: "gotoframe", rect: { x: 580, y: 471, width: 28, height: 13 }, target: 23 },
+    ],
+    "27": [
+      { type: "gotoframe", rect: { x: 411, y: 524, width: 28, height: 13 }, target: 22 },
+    ],
   },
 };
 </script>
-</h6>
-<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="600" width="900">
-<source src="./../downloads/wink/安裝.wink.mp4" type="video/mp4"/></video>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="600" loop="loop" muted="" playsinline="" width="900">
+<source src="./../downloads/2021.11.1.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
@@ -244,35 +265,3 @@ var winkVideoData = {
 </div>
 <div class="winkVideoPlayOverlayClass"></div>
 </div>
-<h6>---------------------------------------------------</h6>
-<p>{wink 功能表}</p>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass"></h4>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass">1.播放時間</h4>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass"></h4>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass">2.對話框</h4>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass"></h4>
-<h4 class="winkVideoControlBarProgressEmptyMiddleClass">3.4  上下頁按鈕</h4>
-<h4></h4>
-<h4>5.更改對話框外觀及更改字體樣式大小和顏色</h4>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"><img alt="" height="676" src="/images/wink 參數值.jpg" width="355"/></div>
-<div class="winkVideoControlBarProgressRightClass"></div>
-<h4 class="winkVideoControlBarProgressFilledMiddleClass">{ffmpeg}</h4>
-<h4 class="winkVideoControlBarProgressFilledMiddleClass"></h4>
-<h4 class="winkVideoControlBarProgressFilledMiddleClass">左上角file到preferences</h4>
-<div class="winkVideoControlBarProgressThumbClass"></div>
-<div class="winkVideoControlBarProgressThumbClass"></div>
-<div class="winkVideoControlBarProgressThumbClass"><img alt="" height="485" src="/images/輸出1.jpg" width="347"/></div>
-<div class="winkVideoControlBarProgressThumbClass"></div>
-<div class="winkVideoControlBarProgressThumbClass"></div>
-<h4 class="winkVideoControlBarProgressThumbClass">把路徑設定到share x裡的ffmpeg</h4>
-<p><img alt="" height="626" src="/images/輸出2.jpg" width="775"/></p>
-<h4 class="winkVideoPlayOverlayClass">{設定輸出大小}</h4>
-<div class="winkVideoPlayOverlayClass"></div>
-<h4 class="winkVideoPlayOverlayClass">左上角Project 到resize all frames</h4>
-<h4>到裡面設定趴數大小及size設定為W 900 H 600</h4>
-<div class="winkVideoPlayOverlayClass"></div>
-<div class="winkVideoPlayOverlayClass"><img alt="" height="427" src="/images/輸出3.jpg" width="388"/></div>
-<div class="winkVideoPlayOverlayClass"></div>
-<h4 class="winkVideoPlayOverlayClass">再來就是輸出</h4>
-<h6 class="winkVideoPlayOverlayClass"><img alt="" height="298" src="/images/輸出4.jpg" width="366"/></h6>
