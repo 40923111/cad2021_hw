@@ -1,0 +1,242 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cad2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923111- 2021 Fall 電腦輔助設計實習 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923111- 2021 Fall 電腦輔助設計實習 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='2022.1.03課堂考試.html'>2022.1.03課堂考試</a><li class='has-children'><a href='W11 查驗.html'>W11 查驗</a><ul class='dropdown'><li><a href='WINK 兩套軟體零件繪製與導入coppeliasim.html'>WINK 兩套軟體零件繪製與導入coppeliasim</a><li><a href='WINK coppeliasim組合及作動過程.html'>WINK coppeliasim組合及作動過程</a></li></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='NX教學簡介影片.html'>NX教學簡介影片</a><li><a href='solvespace教學簡介影片.html'>solvespace教學簡介影片</a><li class='has-children'><a href='CAD1 繪圖.html'>CAD1 繪圖</a><ul class='dropdown'><li><a href='CAD1 安裝配置.html'>CAD1 安裝配置</a><li><a href='CAD1 操作流程.html'>CAD1 操作流程</a></li></ul><li class='has-children'><a href='CAD2 繪圖.html'>CAD2 繪圖</a><ul class='dropdown'><li><a href='CAD2 安裝配置.html'>CAD2 安裝配置</a><li><a href='CAD2 操作流程.html'>CAD2 操作流程</a></li></ul><li><a href='運動場景.html'>運動場景</a></li></ul><li><a href='HW1-1.html'>HW1-1</a><li><a href='HW2.html'>HW2</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='HW3-1.html'>HW3-1</a></li></ul><li><a href='Final Project.html'>Final Project</a><li><a href='機械手臂 mearm模擬.html'>機械手臂 mearm模擬</a><li class='has-children'><a href='每周進度.html'>每周進度</a><ul class='dropdown'><li><a href='W1.html'>W1</a><li><a href='W3 下載CAD套件.html'>W3 下載CAD套件</a><li class='has-children'><a href='W4 WINK 建立.html'>W4 WINK 建立</a><ul class='dropdown'><li><a href='wink 後續操作.html'>wink 後續操作</a></li></ul><li><a href='W5.html'>W5</a><li><a href='W14.html'>W14</a></li></ul><li><a href='期末總結.html'>期末總結</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <a href='Final Project.html'>Next</a> >> Final Project<br /><h1>HW3-1</h1>
+<p><br/><span><strong>1. <a class="external-link" href="https://www.tinkercad.com/?rel=outbound" rel="outbound" target="_blank">TinkerCAD</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="TinkerCAD" class="aligncenter size-full wp-image-67133 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-1-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-1-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-1-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-1-1-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-1-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-1-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-1-1-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-1-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.6965198578140372" height="394" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://template.city/wp-content/uploads/2021/07/Image-1-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-1-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-1-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-1-1-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-1-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-1-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-1-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-1-1-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-1-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="800"/></p>
+<p><span>TinkerCAD是Autodesk公司所推出，面向初學者的線上3D模型設計應用程式。該軟體使用直觀的塊狀建築概念，你可選擇基本形狀，再從中開發模型。</span></p>
+<p><span>這個線上軟體有提供包含數百萬個模型檔的資料庫，還可直接連接協力廠商完成製造服務。這款軟體操作簡單，因功能較為基礎，可能會有一些設計功能上的限制，但對於初學者學習和了解3D建模來說已經足夠。</span></p>
+<p><br/><span><strong>2. <a class="external-link" href="https://www.freecadweb.org/?lang=zh_TW?rel=outbound" rel="outbound" target="_blank">FreeCAD</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="FreeCAD" class="aligncenter size-full wp-image-67134 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-2-2.png?ezimgfmt=rs:696x344/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-2-2.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-2-2-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-2-2-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-2-2-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-2-2-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1068x527.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-2-2-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-2-2-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.6070531523711984" height="937" loading="lazy" sizes="(max-width: 1900px) 100vw, 1900px" src="https://template.city/wp-content/uploads/2021/07/Image-2-2.png?ezimgfmt=rs:696x344/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-2-2.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-2-2-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-2-2-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-2-2-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-2-2-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-2-2-1068x527.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-2-2-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-2-2-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="1900"/></p>
+<p><span>FreeCAD是個完全免費的參數化3D建模工具，它是一個開源軟體，你能夠運用它設計任何尺寸的物體。</span><span>元件參數化使它更容易被編輯，可以儲存模型的更改歷程。</span></p>
+<p><span>這款軟體不是用來設計專業及精密的機械結構，通常會被拿來做為培訓軟體使用。提供的功能也相對較為基本，但對於沒有CAD設計經驗的使用者來說十分友好。</span></p>
+<p><span></span></p>
+<p><br/><span><strong>3. <a class="external-link" href="https://www.blockscad3d.com/?rel=outbound" rel="outbound" target="_blank">BlocksCAD</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="BlocksCAD" class="aligncenter size-full wp-image-67142 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-3-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-3-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-3-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-3-1-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-3-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-3-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-3-1-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-3-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.23564499723466592" height="937" loading="lazy" sizes="(max-width: 1902px) 100vw, 1902px" src="https://template.city/wp-content/uploads/2021/07/Image-3-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-3-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-3-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-3-1-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-3-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-3-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-3-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-3-1-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-3-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="1902"/></p>
+<p><span>這個3D CAD軟體也是專門用於培訓，它是為專業的OpenSCAD培訓而開發的基礎版。開發物件及轉換命令均由色塊表示，看起來有點像是樂高積木。</span></p>
+<p><span>另外，BlocksCAD的程式碼與OpenSCAD的程式碼完全相容，你可以在BlocksCAD中創建模型後，再用OpenSCAD做潤色。輸出格式可以是OpenSCAD或STL。順帶一提，BlocksCAD有個<span><strong><a class="external-link" href="https://www.youtube.com/channel/UCovK2cRIjoaZNzRwpQP2sFg/videos?rel=outbound" rel="outbound" target="_blank">Youtube 3D建模教學頻道</a></strong></span>，不過是英文的就是了。</span></p>
+<p><br/><span><strong>4. </strong><a class="external-link" href="https://www.ptc.com/en/products/creo?rel=outbound" rel="outbound" target="_blank"><strong>Creo CAD</strong></a></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="Creo CAD" class="aligncenter size-full wp-image-67143 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-4-1.png?ezimgfmt=rs:696x344/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-4-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-4-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-4-1-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-4-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-4-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1068x527.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-4-1-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-4-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.3411841953630361" height="937" loading="lazy" sizes="(max-width: 1900px) 100vw, 1900px" src="https://template.city/wp-content/uploads/2021/07/Image-4-1.png?ezimgfmt=rs:696x344/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-4-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-4-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-4-1-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-4-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-4-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-4-1-1068x527.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-4-1-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-4-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="1900"/></p>
+<p><span>Creo CAD是產品設計領域的龍頭，由Parametric技術公司在30多年前開發出來的軟體。</span><span>它有著熱分析、結構、運動、參數化、自由表面生成和直接建模等許多功能，支援建模尺寸計算。</span></p>
+<p><span>總而言之，它是這個領域的首選工具軟體。最新的Creo 5.0版本發佈於2018年，無論是使用者介面與操作方面與之前版本比都有優化，有提供30天免費試用。</span></p>
+<p><br/><span><strong>5. </strong><a class="external-link" href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR?rel=outbound" rel="outbound" target="_blank"><strong>Fusion </strong><strong>360</strong></a></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="Fusion 360" class="aligncenter size-full wp-image-67144 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-5-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-5-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-5-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-5-1-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-5-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-5-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-5-1-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-5-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.079706186756618" height="394" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://template.city/wp-content/uploads/2021/07/Image-5-1.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-5-1.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-5-1-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-5-1-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-5-1-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-5-1-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-5-1-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-5-1-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-5-1-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="800"/></p>
+<p><span>Fusion 360是一款雲端CAD應用程式，它的獨特之處在於，複雜專案可以團隊成員一起共同開發編輯。</span><span>Fusion 360還有一個優勢就是它能儲存模型的開發歷史。</span></p>
+<p><span>它還有眾多的功能，包括自由曲面、實體和網格建模等。付費方式為月費，定期會有功能更新，可在多個平臺上運行，不受地理位置限制，任何地方只要有電腦和網路都可登錄使用。</span></p>
+<div class="code-block code-block-6"><span id="ezoic-pub-ad-placeholder-170"></span></div>
+<p><span>在過去兩年中Fusion 360變得更加受歡迎，而且用戶數量也出現飛躍增長。這應該歸功於良好的使用者介面及專業功能，使它成為3D模型設計的新選擇之一。</span></p>
+<p><br/><span><strong>6. </strong><a class="external-link" href="https://www.solidworks.com/?rel=outbound" rel="outbound" target="_blank"><strong>Solidworks</strong></a></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="Solidworks" class="aligncenter size-full wp-image-67145 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-6.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-6.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-6-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-6-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-6-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-6-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-6-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-6-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-6-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-6-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-6-324x160.png?ezimgfmt=ng:webp/ngcb17 324w,https://template.city/wp-content/uploads/2021/07/Image-6-533x261.png?ezimgfmt=ng:webp/ngcb17 533w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.9873544662794269" height="937" loading="lazy" sizes="(max-width: 1904px) 100vw, 1904px" src="https://template.city/wp-content/uploads/2021/07/Image-6.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-6.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-6-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-6-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-6-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-6-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-6-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-6-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-6-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-6-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-6-324x160.png?ezimgfmt=ng:webp/ngcb17 324w,https://template.city/wp-content/uploads/2021/07/Image-6-533x261.png?ezimgfmt=ng:webp/ngcb17 533w" width="1904"/></p>
+<p><span>它由達梭公司開發的CAD軟體，也是經常被專業的機構工程師所使用。同時它也是基於參數的CAD軟體。</span></p>
+<p><span>該軟體包括設計驗證、反向工程等特殊功能。更多被用於工業設計，它是個相當實用的軟體。最大特點是它與許多同類軟體不同，不是通過傾斜的平面結構來模仿曲線，Solidworks使用NURBS系統創建有著詳細的曲率的曲線。</span></p>
+<div class="code-block code-block-7"><span id="ezoic-pub-ad-placeholder-171"></span></div>
+<p><span>此外，它還使用尺寸草圖來代替多邊形建模，方便調整尺寸。但也有個缺點，導入STL檔的能力有限，若用戶有編輯STL檔的需要，則可能需要額外的輔助程式。</span></p>
+<p><br/><span><strong>7. <a class="external-link" href="https://www.autodesk.com.tw/products/autocad/overview?term=1-YEAR?rel=outbound" rel="outbound" target="_blank">AutoCAD</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="AutoCAD" class="aligncenter size-full wp-image-67146 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-7.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-7.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-7-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-7-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-7-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-7-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-7-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-7-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-7-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-7-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-7-324x160.png?ezimgfmt=ng:webp/ngcb17 324w,https://template.city/wp-content/uploads/2021/07/Image-7-533x261.png?ezimgfmt=ng:webp/ngcb17 533w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.15550602118387147" height="937" loading="lazy" sizes="(max-width: 1904px) 100vw, 1904px" src="https://template.city/wp-content/uploads/2021/07/Image-7.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-7.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-7-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-7-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-7-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-7-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-7-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-7-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-7-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-7-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-7-324x160.png?ezimgfmt=ng:webp/ngcb17 324w,https://template.city/wp-content/uploads/2021/07/Image-7-533x261.png?ezimgfmt=ng:webp/ngcb17 533w" width="1904"/></p>
+<p><span>AutoCAD軟體是AutoDesk在1982年開發出來的軟體，它是最早出現在市面上的CAD軟體之一。</span></p>
+<p><span>雖然AutoCAD很受歡迎，但在3D列印領域，它的受歡迎程度沒有其他軟體來得高。許多使用者認為它的2D繪圖功能強大，但在3D建模方面則有待提高。</span></p>
+<div class="code-block code-block-8"><span id="ezoic-pub-ad-placeholder-177"></span></div>
+<p><span>這款軟體針對具有機械設計經驗的專業人士推出，AutoCAD創建的三維模型可以方便轉換為STL檔並用於3D列印。另外，2010年AutoCAD發佈了一個行動版本叫做AutoCAD 360。</span></p>
+<p><br/><span><strong>8. <a class="external-link" href="https://www.3ds.com/products-services/catia/?rel=outbound" rel="outbound" target="_blank">CATIA</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="CATIA" class="aligncenter size-full wp-image-67147 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-8.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-8.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-8-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-8-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-8-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-8-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-8-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-8-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-8-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-8-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-8-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.687126062669271" height="394" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://template.city/wp-content/uploads/2021/07/Image-8.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-8.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-8-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-8-1024x504.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-8-768x378.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-8-1536x756.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-8-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-8-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-8-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-8-853x420.png?ezimgfmt=ng:webp/ngcb17 853w,https://template.city/wp-content/uploads/2021/07/Image-8-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="800"/></p>
+<p><span>CATIA是達梭公司開發出來的高階CAD軟體，準確地來說它不僅是CAD軟體，還被用於CAM(電腦輔助製造)、CAE(電腦輔助工程)等，由達梭系統的3DEXPERIENCE驅動。</span></p>
+<p><span>CATIA通過整合產品設計和開發過程來創新產品，使它可以被用於產品開發過程的各個階段，因此，該軟體對設計師、工程師和系統建模師都非常好用。CATIA提供的3D設計環境，使團隊能夠更直覺的分享產品設計，並一起合作參與產品開發。</span></p>
+<p><br/><span><strong>9. <a class="external-link" href="https://openscad.org/?rel=outbound" rel="outbound" target="_blank">OpenSCAD</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="OpenSCAD" class="aligncenter size-full wp-image-67148 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-9.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-9.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-9-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-9-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-9-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-9-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-9-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-9-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-9-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-9-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-9-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.42925052820076703" height="937" loading="lazy" sizes="(max-width: 1901px) 100vw, 1901px" src="https://template.city/wp-content/uploads/2021/07/Image-9.png?ezimgfmt=rs:696x342/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-9.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-9-300x148.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-9-1024x505.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-9-768x379.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-9-1536x757.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-9-150x74.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-9-696x343.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-9-1068x526.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-9-852x420.png?ezimgfmt=ng:webp/ngcb17 852w,https://template.city/wp-content/uploads/2021/07/Image-9-324x160.png?ezimgfmt=ng:webp/ngcb17 324w" width="1901"/></p>
+<p><span>OpenSCAD是款免費開源的CAD軟體，能夠製作出實體3D模型。它適合有一定機械設計經驗的人使用。</span></p>
+<p><span>此外，該款軟體對工程師很友善，很適合已被參數化的簡單模型。因為該軟體是基於電腦程式語言設計，所以它不適合完全不懂程式設計的用戶使用。</span></p>
+<p><br/><span><strong>10. <a class="external-link" href="https://www.rhino3d.com/tw/?rel=outbound" rel="outbound" target="_blank">Rhino3D</a></strong></span><span class="ez-toc-section-end"></span></p>
+<p><img alt="Rhino3D" class="aligncenter size-full wp-image-67149 ezlazyloaded" data-ezsrc="https://template.city/wp-content/uploads/2021/07/Image-11.png?ezimgfmt=rs:696x337/rscb17/ng:webp/ngcb17" data-ezsrcset="https://template.city/wp-content/uploads/2021/07/Image-11.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-11-300x145.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-11-1024x495.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-11-768x371.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-11-1536x743.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-11-150x73.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-11-696x336.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-11-1068x516.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-11-869x420.png?ezimgfmt=ng:webp/ngcb17 869w" ezimgfmt="rs rscb17 src ng ngcb17 srcset" ezoid="0.08591793104088352" height="387" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="https://template.city/wp-content/uploads/2021/07/Image-11.png?ezimgfmt=rs:696x337/rscb17/ng:webp/ngcb17" srcset="https://template.city/wp-content/uploads/2021/07/Image-11.png?ezimgfmt=ng:webp/ngcb17 800w,https://template.city/wp-content/uploads/2021/07/Image-11-300x145.png?ezimgfmt=ng:webp/ngcb17 300w,https://template.city/wp-content/uploads/2021/07/Image-11-1024x495.png?ezimgfmt=ng:webp/ngcb17 1024w,https://template.city/wp-content/uploads/2021/07/Image-11-768x371.png?ezimgfmt=ng:webp/ngcb17 768w,https://template.city/wp-content/uploads/2021/07/Image-11-1536x743.png?ezimgfmt=ng:webp/ngcb17 1536w,https://template.city/wp-content/uploads/2021/07/Image-11-150x73.png?ezimgfmt=ng:webp/ngcb17 150w,https://template.city/wp-content/uploads/2021/07/Image-11-696x336.png?ezimgfmt=ng:webp/ngcb17 696w,https://template.city/wp-content/uploads/2021/07/Image-11-1068x516.png?ezimgfmt=ng:webp/ngcb17 1068w,https://template.city/wp-content/uploads/2021/07/Image-11-869x420.png?ezimgfmt=ng:webp/ngcb17 869w" width="800"/></p>
+<p><span>這是一套十分商業化的CAD軟體，該程式使用一個精確的數學模型，稱為NURB，允許以各種方式操作點、曲線、網格、表面、實體等。</span></p>
+<p><span>Rhino3D的優勢在於它廣泛的設計功能，在創建複雜的三維模型方面有著極大的通用性。然而，許多使用者反映該軟體入門較難，且入門後會需要大量的練習，因此可能不適合初學者使用。</span></p>
+<br/><span></span>HW3-2
+<p></p>
+<br />HW3 << <a href='HW3.html'>Previous</a> <a href='Final Project.html'>Next</a> >> Final Project</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
