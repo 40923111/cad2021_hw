@@ -139,90 +139,84 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">WINK coppeliasim組合及作動過程 << <a href='WINK coppeliasim組合及作動過程.html'>Previous</a> <a href='NX教學簡介影片.html'>Next</a> >> NX教學簡介影片<br /><h1>HW1</h1>
-<p>HW1 佔學期成績 25%</p>
-<p><span style="background-color: #ffff99;">HW1 必須在 2021.11.10 22:00 之前完成.<br/></span></p>
-<p><a href="https://github.com/mdecourse/cad2021/discussions/5">HW1 具體項目成果回報區</a>將於 2021.09.23 開啟, 於 <span style="background-color: #ff99cc;">2021.11.10 22:00 關閉.</span></p>
-<h4>作業一: meArm Robot 零件繪圖與機電運動模擬場景製作</h4>
-<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step1</span>: 下載 <a href="https://drive.google.com/file/d/18ukdNlFB9yHY-FZSY-bTnzrPrNv0FE4D/view?usp=sharing">meARM.7z</a> 這個包含尚未完成組立的 meArm Robot 場景與雷射切割零件組立手冊.</p>
-<p style="padding-left: 60px;"><a href="./../downloads/meArm_75-0040_v1.pdf">meArm_75-0040_v1.pdf</a> 則是另外一本組立參考手冊.</p>
-<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step2</span>: 從課程網頁中的 <a href="https://mde.tw/cad2021/content/Compile%20CoppeliaSim.html">Compile CoppeliaSim 頁面</a>, 下載 <a href="https://drive.google.com/file/d/1hV8hHjjnLvUp-AEjd2iCfBYk067WSjcy/view?usp=sharing">coppeliaSim 4.1.0 官方版與 MSYS2 編譯版.7z</a> (檔案大小 412 MB, 解開壓縮後 1GB) 可攜套件.</p>
-<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step3</span>: 在 HW1 中, 要求每一位學員透過程式亂數分配 (兩班實際亂數分配結果以上課時點擊下列按鈕所得結果為準) 所使用的兩套參數式 CAD 套件, 從軟體發展緣起開始進行介紹,  經過教育版軟體套件檔案的取得, 下載安裝以及配置使用. 根據 Step1 中的零件尺寸, 逐一完成 meArm Robot 各零件繪製與組立. 並將零件<a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm">匯入</a> CoppeliaSim 進行組裝配置後, 以 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制 meArm Robot 各軸的旋轉作動.</p>
-<p style="padding-left: 30px;">2b CAD 套件分配結果: <a href="https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt">https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt</a></p>
-<h4>附件:</h4>
-<p style="padding-left: 30px;">1. CAD 套件分配表:</p>
-<p style="padding-left: 60px;">sw: Solidworks, inv: Inventor, nx: NX12, ons: Onshape, slvs: Solvespace</p>
-<p style="padding-left: 60px;"><a href="https://mde.tw/cad2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/6d0b8df27021529f910cbd0fde2222b6/raw/d5dbb42166e70d9bf4815e0f669957e40106f8fc/distrubute_cad_combination.py">2a 套件亂數分配結果</a></p>
-<p style="padding-left: 60px;"><a href="https://mde.tw/cad2021/content/run.html?src=https://gist.githubusercontent.com/mdecourse/6d0b8df27021529f910cbd0fde2222b6/raw/d5dbb42166e70d9bf4815e0f669957e40106f8fc/distrubute_cad_combination_b.py">2b 套件亂數分配結果</a></p>
-<p style="padding-left: 30px;">2. 在兩套 CAD 完成零件繪圖並轉入 CoppeliaSim 後, 為了建立 Dynamic Model 必須利用 <a href="https://www.coppeliarobotics.com/helpFiles/en/shapeEditModes.htm">shape edit modes</a> 轉為 <a href="https://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">clean model</a>, 並與實際轉入的 STL 格式零件外形結合應用後建立模擬場景 (scenes).</p>
-<p style="padding-left: 30px;">3. meARM Robot <a href="https://www.youtube.com/watch?v=YdhpMqNa_mE">動態模擬場景</a>的建構, 可參考 <a href="https://www.youtube.com/watch?v=ucO0v5iel-c">0</a>, <a href="https://www.youtube.com/watch?v=jeviAIlh7wY">1</a>, <a href="https://www.youtube.com/watch?v=MrmHoGa3Kg4">2</a>, <a href="https://www.youtube.com/watch?v=43-xyipH9Ss">3</a>, <a href="https://www.youtube.com/watch?v=i9e4GXov8rk">4</a>, <a href="https://www.youtube.com/watch?v=7f1jzC6Uptg">5</a>, <a href="https://www.youtube.com/watch?v=xadyMQJxjnw">6</a>, <a href="https://www.youtube.com/watch?v=SQhKlnNnzuQ">7</a>, 也可參考 <a href="https://github.com/mdecourse/models/blob/master/robots/non-mobile/uarm.ttm">Uarm Robot model</a> 與相關<a href="https://www.youtube.com/watch?v=OqPVK__z9Ek">影片</a>.</p>
-<p style="padding-left: 30px;">4. CoppeliaSim design dynamic simulations <a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">說明頁面</a>.</p>
-<p style="padding-left: 30px;">5. <a href="https://mde.tw/cad2021/downloads/lua/index.html">網際 Lua</a> 程式執行.</p>
-<p style="padding-left: 30px;">6. <a href="./../downloads/meArm.slvs">meArm.slvs</a>, <a href="./../downloads/meArm_in_solvespace.slvs">meArm_in_solvespace.slvs</a></p>
-<p style="padding-left: 30px;">7. UI 介面程式參考:</p>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function closeEventHandler(h)
-    sim.addLog(sim.verbosity_scriptinfos,'Window '..h..' is closing...')
-    simUI.hide(h)
-end
-
-function joint1_rotate(ui,id,newVal)
-    simUI.setLabelText(ui,3000,'theta1 set to '..newVal)
-    sim.setJointTargetPosition(joint1, newVal*deg)
-end
-
-function joint2_rotate(ui,id,newVal)
-    simUI.setLabelText(ui,3000,'theta2 set to '..newVal)
-    sim.setJointTargetPosition(joint2, newVal*deg)
-end
-
-function joint3_rotate(ui,id,newVal)
-    simUI.setLabelText(ui,3000,'theta3 set to '..newVal)
-    sim.setJointTargetPosition(joint3, newVal*deg)
-end
-
-function joint16_rotate(ui,id,newVal)
-    simUI.setLabelText(ui,3000,'theta16 set to '..newVal)
-    sim.setJointTargetPosition(joint16, newVal*deg)
-    sim.setJointTargetPosition(joint20, -newVal*deg)
-end
-
-function sysCall_init()
-    -- do some initialization here
-    joint1 = sim.getObjectHandle('motor1')
-    joint2 = sim.getObjectHandle('motor2')
-    joint3 = sim.getObjectHandle('motor3')
-    joint16 = sim.getObjectHandle('motor16')
-    joint20 = sim.getObjectHandle('motor20')
-    i = 0
-    deg = math.pi/180
-    print(i)
-    xml = [[
-&lt;ui closeable="true" on-close="closeEventHandler" resizable="true"&gt;
-    &lt;label text="This is a demo of the CustomUI plugin. Browse through the tabs below to explore all the widgets that can be created with the plugin." wordwrap="true" /&gt;
-    &lt;tabs&gt;
-        &lt;tab title="Numeric"&gt;a
-            &lt;label text="Sliders can be oriented horizontally or vertically, and have optional properties that can be set (in the XML) such as minimum and maximum value." wordwrap="true" /&gt;
-            &lt;label text="" id="3000" wordwrap="true" /&gt;
-            &lt;label text="theta1" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
-            minimum="0" maximum="360" on-change="joint1_rotate" /&gt;
-            &lt;label text="theta2" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
-            minimum="-90" maximum="65" on-change="joint2_rotate" /&gt;
-            &lt;label text="theta3" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
-            minimum="-90" maximum="185" on-change="joint3_rotate" /&gt;
-            &lt;label text="theta16" /&gt; &lt;hslider tick-position="above" tick-interval="1" 
-            minimum="0" maximum="15" on-change="joint16_rotate" /&gt;
-        &lt;/tab&gt;
-    &lt;/tabs&gt;
-&lt;/ui&gt;
-]]
-    ui=simUI.create(xml)
-    
-end</pre>
-<p><img alt="" class="add_border" height="282" src="./../images/meArm_linkage_dimension.png" width="600"/></p>
-<p>(From: <a href="./../downloads/2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf">2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf</a>)</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2pFReCfDZsU" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<br />WINK coppeliasim組合及作動過程 << <a href='WINK coppeliasim組合及作動過程.html'>Previous</a> <a href='NX教學簡介影片.html'>Next</a> >> NX教學簡介影片</div>
+    <div id="tipue_search_content">期末總結 << <a href='期末總結.html'>Previous</a> <br /><h1>期末考試</h1>
+<p><span>第一階段: 請將自己所完成繪製的 meArm Robot 零件與組立檔案畫面呈現在網頁中, 並將所有零件與組立檔案壓縮成"學號_final.zip" 送到個人的 </span><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/gm/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/gm">@gm</a><span><span> </span>帳號 GDrive, 並將連結轉為公開下載. (若採用 Onshape 請將零組件繪圖連結設為公開分享後, 放入頁面).</span></p>
+<p><span>meArm Robot 零件與組立檔下載</span></p>
+<p><a href="https://drive.google.com/drive/folders/1zMg0VILd8BzripKet9vsVBXiAWrgx3zY?usp=sharing">https://drive.google.com/drive/folders/1zMg0VILd8BzripKet9vsVBXiAWrgx3zY?usp=sharing</a></p>
+<p>因為還不清楚NX和slov的組合怎麼搞，因為時間的關係我將NX畫的零件轉檔到個人拿手的inventor來做</p>
+<p>組合來增加效率。</p>
+<p><img alt="" height="600" src="./../images/組合三角右.jpg" width="1067"/></p>
+<p><span>第二階段: 請修改第一階段個人所完成的 meArm 組立檔案, 將兩側連桿機構互換, 亦即將帶有三角形連桿的機構與另一方機構互相對調. 完成後, 請在網頁中呈現所完成的組立圖畫面, 並將零組件檔案壓縮成"學號_final_stage2.zip" 送到個人的 </span><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/gm/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/gm">@gm</a><span><span> </span>帳號 GDrive, 並將連結轉為公開下載. (若採用 Onshape 請將零組件繪圖連結設為公開分享後, 放入頁面).</span></p>
+<p><span>meArm 零件與組立檔下載</span></p>
+<p><span><a href="https://drive.google.com/drive/folders/119CcOJsjAthu5clJ5zdIbSCk1p_dw6Lc?usp=sharing">https://drive.google.com/drive/folders/119CcOJsjAthu5clJ5zdIbSCk1p_dw6Lc?usp=sharing</a></span></p>
+<p><span><img alt="" height="600" src="./../images/組合三角左.jpg" width="1149"/></span></p>
+<p><span><img alt="" height="600" src="./../images/組合三角左2.jpg" width="1076"/></span></p>
+<p><span>第三階段: 請將第二階段新完成的 meArm 零組件轉入 CoppeliaSim 後, 利用 Slider 控制其中的各轉動軸, 完成後請以 Wink 影片呈現製作過程, 並將"學號_final.ttt" 檔案壓縮為"學號_final_ttt.zip" 送到個人的 <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/gm/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/gm">@gm</a><span><span> </span>帳號 GDrive, 並將連結轉為公開下載.</span></span></p>
+<p><span><span>模擬檔下載 </span></span></p>
+<p><span><span><a href="https://drive.google.com/drive/folders/1W3VjDhMm4-DM6GfHXymJeE5cEyMOCWyG?usp=sharing">https://drive.google.com/drive/folders/1W3VjDhMm4-DM6GfHXymJeE5cEyMOCWyG?usp=sharing</a></span></span></p>
+<p>因先前已有使用老師給的未編排的組合檔來做編排模擬，但目前自己的組合件匯入模擬器後錯誤不斷還邊不太出來，所以此wink先以先前已編好的來做講解過程</p>
+<p><span><span></span></span></p>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 701, y: 499, width: 60, height: 24 }, target: 3 },
+    ],
+    "41": [
+      { type: "gotoframe", rect: { x: 422, y: 186, width: 60, height: 24 }, target: 2 },
+      { type: "gotoframe", rect: { x: 526, y: 185, width: 60, height: 24 }, target: 42 },
+    ],
+    "66": [
+      { type: "gotoframe", rect: { x: 187, y: 400, width: 60, height: 24 }, target: 41 },
+      { type: "gotoframe", rect: { x: 580, y: 396, width: 60, height: 24 }, target: 67 },
+    ],
+    "73": [
+      { type: "gotoframe", rect: { x: 460, y: 369, width: 60, height: 24 }, target: 66 },
+      { type: "gotoframe", rect: { x: 715, y: 369, width: 60, height: 24 }, target: 74 },
+    ],
+    "121": [
+      { type: "gotoframe", rect: { x: 321, y: 455, width: 60, height: 24 }, target: 73 },
+      { type: "gotoframe", rect: { x: 590, y: 456, width: 60, height: 24 }, target: 122 },
+    ],
+    "161": [
+      { type: "gotoframe", rect: { x: 416, y: 314, width: 60, height: 24 }, target: 121 },
+      { type: "gotoframe", rect: { x: 579, y: 155, width: 60, height: 24 }, target: 162 },
+    ],
+    "186": [
+      { type: "gotoframe", rect: { x: 678, y: 277, width: 60, height: 24 }, target: 161 },
+      { type: "gotoframe", rect: { x: 762, y: 275, width: 60, height: 24 }, target: 187 },
+    ],
+    "215": [
+      { type: "gotoframe", rect: { x: 385, y: 121, width: 60, height: 24 }, target: 186 },
+      { type: "gotoframe", rect: { x: 500, y: 123, width: 60, height: 24 }, target: 216 },
+    ],
+    "275": [
+      { type: "gotoframe", rect: { x: 219, y: 104, width: 60, height: 24 }, target: 215 },
+      { type: "gotoframe", rect: { x: 427, y: 103, width: 60, height: 24 }, target: 276 },
+    ],
+    "292": [
+      { type: "gotoframe", rect: { x: 599, y: 472, width: 60, height: 24 }, target: 275 },
+      { type: "gotoframe", rect: { x: 738, y: 468, width: 60, height: 24 }, target: 293 },
+    ],
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="./../cmsimde/static" data-varname="winkVideoData" height="600" loop="loop" muted="" playsinline=" autoplay=" width="900">
+<source src="./../downloads/robot.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div><br />期末總結 << <a href='期末總結.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
